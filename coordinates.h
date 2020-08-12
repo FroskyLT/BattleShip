@@ -33,7 +33,7 @@ bool CoordCheck(int x1, int y1, int x2, int y2, int c) //setposition
     if ((x1 == x2 && y2 - y1 != c - 1) || (y1 == y2 && x2 - x1 != c - 1) ||
         (y1 != y2 && x1 != x2) || x1 > 9 || x2 > 9 || y1 > 9 || y2 > 9)
     {
-        cout << "ivedete klaidingas koordinates\n";
+        cout << "incorrect coordinates entered\n";
         return false;
     }
     else return true;
@@ -43,7 +43,7 @@ bool ShotCheck(int x, int y) //shots
 {
     if (x > 9 || y > 9)
     {
-        cout << "ivedete klaidingas koordinates\n";
+        cout << "incorrect coordinates entered\n";
         return false;
     }
     else return true;
